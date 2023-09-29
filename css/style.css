@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+:root {
+  --Light-lavender: hsl(241, 100%, 89%);
+  --gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  min-height: 100vh;
+}
+
+.tracking-container {
+  width: 100%;
+  min-height: 100vh;
+}
+.tracking-container .left-container {
+  width: 100%;
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  padding-block-start: 0.6125rem;
+  padding-inline: 1.25em;
+  padding-block-end: 1em;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 2rem;
+}
+.tracking-container .result {
+  margin-block-end: 0.625rem;
+}
+.tracking-container .result p {
+  font-weight: 700;
+  color: var(--Light-lavender);
+  font-size: 1.125rem;
+}
+.tracking-container .circle {
+  margin-block-start: 0.125em;
+  margin-block-end: 0.325em;
+  width: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 74%, 49%, 0.733));
+  padding: 1em 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tracking-container .circle h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+}
+.tracking-container .circle p {
+  font-weight: 500;
+  color: var(--Light-lavender);
+  font-size: 0.9375rem;
+}
+.tracking-container .discription h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.tracking-container .discription p {
+  color: var(--Light-lavender);
+  margin-block-start: 0.625em;
+  font-size: 0.875rem;
+}
+
+.score {
+  display: flex;
+  margin-inline: auto;
+  margin-block: 0.625em;
+  padding: 0.625em;
+  width: 100%;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.right-container {
+  border-radius: 2rem;
+  width: 90%;
+  padding-block-start: 0.625em;
+  padding-inline: 1.25em;
+  padding-block-end: 2em;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-inline: auto;
+}
+.right-container .grey {
+  color: var(--Light-lavender);
+}
+.right-container .module-2 {
+  color: var(--gray-blue);
+  font-weight: 700;
+}
+.right-container .summary {
+  align-self: flex-start;
+}
+.right-container .summary p {
+  color: var(--gray-blue);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.right-container .reaction {
+  background-color: hsla(0, 74%, 67%, 0.178);
+}
+.right-container .reaction-module-1 {
+  display: flex;
+}
+.right-container .reaction-module-1 p {
+  color: hsl(0, 100%, 67%);
+  font-weight: 500;
+  margin-left: 10px;
+}
+.right-container .memory {
+  background-color: hsla(39, 100%, 56%, 0.178);
+}
+.right-container .memory .memory-module-1 {
+  display: flex;
+}
+.right-container .memory .memory-module-1 p {
+  color: hsl(39, 100%, 56%);
+  font-weight: 500;
+  margin-left: 10px;
+}
+.right-container .verbal {
+  background-color: hsla(166, 100%, 37%, 0.173);
+}
+.right-container .verbal .verbal-module-1 {
+  display: flex;
+}
+.right-container .verbal .verbal-module-1 p {
+  color: hsl(166, 100%, 37%);
+  font-weight: 500;
+  margin-left: 10px;
+}
+.right-container .visual {
+  background-color: hsla(234, 85%, 45%, 0.173);
+}
+.right-container .visual .visual-module-1 {
+  display: flex;
+}
+.right-container .visual .visual-module-1 p {
+  color: hsl(234, 85%, 45%);
+  font-weight: 500;
+  margin-left: 10px;
+}
+.right-container .btn {
+  width: 100%;
+  margin-block: 0.625em;
+}
+.right-container .btn a {
+  color: hsl(0, 0%, 100%);
+  background-color: var(--gray-blue);
+  padding: 0.625em;
+  display: inline-block;
+  width: 100%;
+  border-radius: 1.3rem;
+}
+
+@media all and (min-width: 473px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tracking-container {
+    display: flex;
+    width: 500px;
+    min-height: 100px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
+    justify-content: center;
+  }
+  .tracking-container .left-container {
+    width: 50%;
+    justify-content: center;
+  }
+  .tracking-container .right-container {
+    width: 50%;
+    padding: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
